@@ -12,3 +12,4 @@
 		href="hotcelebrities">Hot Celebrities</a
 	>
 </nav>
+
