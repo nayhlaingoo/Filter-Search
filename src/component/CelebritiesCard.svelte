@@ -8,7 +8,7 @@
 </script>
 
 <div
-	class="bg-slate-200/70 hover:shadow-lg duration-100 shadow-md w-72 mx-auto sm:w-56 rounded-sm pb-5 overflow-hidden"
+	class="bg-slate-200/70 hover:shadow-lg duration-100 shadow-md w-full mx-auto sm:w-56 rounded-sm pb-5 overflow-hidden"
 >
 	<a href={link} target="_blank">
 		<div class="w-full h-72 pb-3">

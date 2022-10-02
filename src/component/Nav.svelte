@@ -1,10 +1,12 @@
 <script>
 	import { Icon, ChevronDown } from 'svelte-hero-icons';
+	export { customClass as class };
+	let customClass = '';
 	let show = false;
 </script>
 
 <nav
-	class="bg-slate-100/70 border-slate-200 border-b backdrop-blur-md py-3 sm:py-5 px-2 sm:px-10 sticky top-0"
+	class="{customClass} bg-slate-100/70 border-slate-200 border-b backdrop-blur-md py-3 sm:py-5 px-2 sm:px-10 sticky top-0"
 >
 	<div class="flex gap-3 justify-between items-center h-10">
 		<div class="flex gap-3 items-center sm:gap-4">
@@ -25,12 +27,12 @@
 			<div>
 				<button
 					type="button"
-					class="inline-flex w-full justify-center gap-1 items-center rounded-md border border-slate-300 bg-white px-4 py-1.5 text-sm font-medium text-slate-700 shadow-sm hover:bg-zinc-50 focus:outline-none focus:border-slate-400"
+					class="inline-flex w-full justify-center gap-1 items-center rounded-md border border-slate-300 bg-white sm:px-4 px-1.5 py-1.5 text-sm font-medium text-slate-700 shadow-sm hover:bg-zinc-50 focus:outline-none focus:border-slate-400"
 					id="menu-button"
 					aria-expanded="true"
 					aria-haspopup="true"
 				>
-					Options
+					<!-- Options -->
 					<Icon src={ChevronDown} size="15" />
 				</button>
 			</div>
